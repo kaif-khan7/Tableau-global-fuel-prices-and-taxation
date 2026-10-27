@@ -11,13 +11,12 @@ app = Flask(__name__)
 # ---------------------------------------------------------------------------
 app.config["DASHBOARD_URL"] = os.environ.get(
     "DASHBOARD_URL",
-    "https://public.tableau.com/views/GlobalFuelPricesandTaxationTrends/Sheet9-10?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
+    "https://public.tableau.com/views/GlobalFuelpricesandtaxation/Sheet9-10?:language=en-US&:sid=&:redirect=auth&publish=yes&showOnboarding=true&:display_count=n&:origin=viz_share_link",
 )
 # TODO: replace with your published Tableau Story URL
 app.config["STORY_URL"] = os.environ.get(
     "STORY_URL",
-    "https://public.tableau.com/views/GlobalFuelPricesandTaxationTrends/Story1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
-)
+    "https://public.tableau.com/views/GlobalFuelpricesandtaxation/Story1?:language=en-US&:sid=&:redirect=auth&publish=yes&showOnboarding=true&:display_count=n&:origin=viz_share_link",)
 
 
 @app.route("/")
